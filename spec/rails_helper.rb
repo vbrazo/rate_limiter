@@ -10,7 +10,6 @@ require 'rspec/rails'
 require 'rate_limiter'
 
 require "support/database_cleaner"
-require "support/rate_limiter_initializer"
 require "support/shoulda_matchers"
 
 RSpec.configure do |config|
