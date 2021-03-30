@@ -1,8 +1,5 @@
 FROM ruby:2.7.2
 
-ARG GITHUB_USERNAME
-ARG GITHUB_TOKEN
-
 WORKDIR /var/gem
 
 COPY . .
