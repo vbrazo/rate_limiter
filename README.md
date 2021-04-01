@@ -1,16 +1,16 @@
 # Rate Limiter
 
-Rate Limiter is a Rails engine that can easily limit requests per client.
+Rate Limiter is a Rails engine that can easily limit requests per client in your Rails APIs.
 
 ## Problem
 
-The act of limiting the number of requests sent to or from a system. Rate limiting is most often used to limit the number of incoming requests in order to prevent DoS attacks and can be enforced at the IP-address level, at the user-account level, or at the region level, for example. Rate limiting can also be implemented in tiers; for instance, a type of network request could be limited to 1 per second, 5 per 10 seconds, and 10 per minute.
+Rate limiting is the act of limiting the number of requests sent to or from a system. It's most often used to limit the number of incoming requests in order to prevent `DoS attacks` and can be enforced at the IP-address level, at the user-account level, or at the region level, for example.
 
-### DoS attack
+#### DoS attack
 
 Short for "denial-of-service attack", a DoS attack is an attack in which a malicious user tries to bring down or damage a system in order to render it unavailable to users. Much of the time, it consists of flooding it with traffic. Some DoS attacks are easily preventable with rate limiting, while others can be far trickier to defend against.
 
-### DDoS attack
+#### DDoS attack
 
 Short for "distributed denial-of-service attack", a DDoS attack is a DoS attack in which the traffic flooding the target system comes from many different sources (like thousands of machines), making it much harder to defend against.
 
@@ -18,9 +18,9 @@ Short for "distributed denial-of-service attack", a DDoS attack is a DoS attack 
 
 In order to control the Rate Limiting, this Rails Engine proposes to use Redis and its in-memory key-value store. Redis offers some persistent storage options but is typically used as a really fast, best-effort caching solution. Redis is also often used to implement rate limiting.
 
-## Usage
+### Usage
 
-1. create an initializer for your Rate Limiter engine and set the default properties:
+1. Create an initializer for your Rate Limiter engine and set the default properties:
 
 ```ruby
 RateLimiter.configure do |config|
