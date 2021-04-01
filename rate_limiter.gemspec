@@ -11,11 +11,10 @@ Gem::Specification.new do |spec|
   spec.description = "Rate Limiter for Rails APIs"
   spec.files       = Dir["{lib}/**/*"]
 
+  spec.add_dependency 'rails', '~> 6.1.3'
   spec.add_dependency 'redis', '~> 4.0'
 
-  spec.add_development_dependency 'database_cleaner'
+  spec.add_development_dependency 'mock_redis'
   spec.add_development_dependency 'pg'
-  spec.add_development_dependency 'rails'
   spec.add_development_dependency 'rspec-rails'
-  spec.add_development_dependency 'shoulda-matchers'
 end
