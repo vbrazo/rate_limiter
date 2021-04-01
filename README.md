@@ -1,5 +1,7 @@
 # Rate Limiter
 
+[![CircleCI](https://circleci.com/gh/vbrazo/rate_limiter.svg?style=svg&circle-token=76a6a276549c313fa74076e5638a1d6d15cd5ee7)](<https://app.circleci.com/settings/project/github/vbrazo/rate_limiter>)
+
 Rate Limiter is a Rails engine that can easily limit requests per client in your Rails APIs.
 
 ## Problem
