@@ -23,7 +23,7 @@ In order to control the Rate Limiting, this Rails Engine proposes to use Redis a
 
 ### Installation
 
-Add this line to your application's Gemfile:
+- Add this line to your application's Gemfile:
 
 ```ruby
 gem 'rate_limiter_engine', 'X.Y.Z'
@@ -31,7 +31,7 @@ gem 'rate_limiter_engine', 'X.Y.Z'
 
 and run `bundle` to install your dependencies.
 
-Create an initializer for your Rate Limiter engine and set the default properties:
+- Create an initializer for your Rate Limiter engine and set the default properties:
 
 ```ruby
 RateLimiter.configure do |config|
