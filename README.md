@@ -48,9 +48,9 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-### Available Docker commands
+## Available Docker commands
 
-All available commands:
+I built this engine with Docker so I'd suggest using it. All available commands are:
 
 | Command      | Description                            |
 |--------------|----------------------------------------|
