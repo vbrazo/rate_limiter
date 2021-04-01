@@ -2,14 +2,11 @@ default: &default
   adapter: postgresql
   encoding: unicode
   database: rate_limiter-dev
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
-  password: password
-  host: localhost
 
 development:
   <<: *default
   database: rate_limiter-dev
+  url: <%= ENV.fetch("DATABASE_URL", "postgres://postgres:@db:5432/rate_limiter_development") %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -17,3 +14,4 @@ development:
 test:
   <<: *default
   database: rate_limiter-test
+  url: <%= ENV.fetch("DATABASE_URL", "postgres://postgres:@db:5432/rate_limiter_test") %>
