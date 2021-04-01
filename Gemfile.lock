@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rate_limiter (0.1.0)
+    rate_limiter_engine (0.1.0)
       rails (~> 6.1.3)
       redis (~> 4.0)
 
@@ -164,7 +164,7 @@ PLATFORMS
 DEPENDENCIES
   mock_redis
   pg
-  rate_limiter!
+  rate_limiter_engine!
   rspec-rails
 
 BUNDLED WITH

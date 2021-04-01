@@ -1,12 +1,11 @@
 version: '2'
+
 services:
   gem:
     build:
       context: .
     volumes:
       - .:/var/gem
-    ports:
-      - '3000:3000'
     depends_on:
       - db
   db:
