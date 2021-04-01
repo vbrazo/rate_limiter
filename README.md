@@ -20,7 +20,7 @@ In order to control the Rate Limiting, this Rails Engine proposes to use Redis a
 
 ## Usage
 
-First, create an initializer for your Rate Limiter engine and set the default properties:
+1. create an initializer for your Rate Limiter engine and set the default properties:
 
 ```ruby
 RateLimiter.configure do |config|
@@ -31,7 +31,7 @@ RateLimiter.configure do |config|
 end
 ```
 
-To add it, all you have to do is `include RateLimiter::RateLimit` in ApplicationController to have it on all your controllers using default settings of 100 request per hour (100 seconds).
+2. To add a Rate Limiter, all you have to do is `include RateLimiter::RateLimit` in `ApplicationController` to have it on all your controllers using default settings of 100 request per hour (100 seconds).
 
 You can also add it directly to the controller you want to be rate limited.
 
