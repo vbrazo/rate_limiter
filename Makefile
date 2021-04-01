@@ -5,4 +5,4 @@ bash:
 	docker-compose run gem bash
 
 specs:
-	docker-compose run --entrypoint ./bin/specs gem
+	docker-compose run -e "RAILS_ENV=test" gem bundle exec rspec .
